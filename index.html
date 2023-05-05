@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Calculador de idade</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Calculadora de idade</h1>
+
+        <div class="content">
+            <div class="header">
+                <form class="form">
+                    <div class="inputBox">
+                        <label for="day">
+                          Dia
+                        </label>
+                        <input type="number" placeholder="DD" id="day">
+                        <small></small>
+                    </div>
+                    <div class="inputBox">
+                        <label for="month">
+                          Mês
+                        </label>
+                        <input type="number" placeholder="MM" id="month">
+                        <small></small>
+                    </div>
+                    <div class="inputBox">
+                        <label for="year">
+                          Ano
+                        </label>
+                        <input type="number" placeholder="AAAA" id="year">
+                        <small></small>
+                    </div>
+                      
+                </form>
+
+                <div class="borderButton">
+                    <hr> 
+                    <div id="iconDiv" class="arrowIcon">
+                        <img class="downArrow" src="./assets/img/seta-para-baixo.png" alt="seta para baixo"/>   
+                    </div>                   
+                </div>
+            </div>           
+
+            <div class="display">
+                <p id="display_text" class="textDay"><span id="display_day" class="numberYear">--</span> dias</p>
+                <p id="display_text" class="textMonth"><span id="display_month" class="numberMonth">--</span> meses</p>
+                <p id="display_text" class="textYear"><span id="display_year" class="numberYear">--</span> anos</p>
+            </div>
+
+            
+
+        </div>
+    </div>
+    <script src="./script.js"/>
+</body>
+</html>
